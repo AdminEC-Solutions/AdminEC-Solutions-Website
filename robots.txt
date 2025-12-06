@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://adminec-solutions.fr/sitemap.xml
+
+# Bloquer les fichiers sensibles
+Disallow: /css/
+Disallow: /js/

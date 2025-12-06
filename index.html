@@ -3,25 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Admin'EC Solutions - Assistante administrative indépendante à Anduze. Gestion administrative, commerciale et pré-comptabilité pour artisans, professions libérales et entrepreneurs.">
-    <title>Admin'EC Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Assistante administrative indépendante à Anduze et Alès. Services de gestion administrative, commerciale et comptable pour artisans, professions libérales et TPE. Devis gratuit.">
+    <meta name="keywords" content="assistante administrative Anduze, secrétariat indépendant Alès, gestion administrative Gard, assistant commercial Anduze, secrétariat externalisé, gestion comptable artisans">
+    <meta name="author" content="Admin'EC Solutions - Emeline Couret">
+    <meta name="geo.region" content="FR-30">
+    <meta name="geo.placename" content="Anduze">
+    <meta name="geo.position" content="44.0539;3.9856">
+    <meta name="ICBM" content="44.0539, 3.9856">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adminec-solutions.fr">
+    <meta property="og:title" content="Admin'EC Solutions - Assistante Administrative Anduze">
+    <meta property="og:description" content="Libérez-vous du poids administratif. Services d'assistance administrative pour entrepreneurs et TPE/PME à Anduze et dans le Gard.">
+    <meta property="og:image" content="https://adminec-solutions.fr/images/presentation.png">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://adminec-solutions.fr">
+    <meta name="twitter:title" content="Admin'EC Solutions - Assistante Administrative Anduze">
+    <meta name="twitter:description" content="Services d'assistance administrative pour entrepreneurs et TPE/PME à Anduze et dans le Gard.">
+    <meta name="twitter:image" content="https://adminec-solutions.fr/images/presentation.png">
+    
+    <title>Admin'EC Solutions - Assistante Administrative Anduze & Alès | Gard</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://adminec-solutions.fr">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Admin'EC Solutions",
+      "image": "https://adminec-solutions.fr/images/presentation.png",
+      "description": "Assistante administrative indépendante à Anduze et Alès. Services de gestion administrative, commerciale et pré-comptabilité pour artisans, professions libérales, professionnels de santé et TPE.",
+      "@id": "https://adminec-solutions.fr",
+      "url": "https://adminec-solutions.fr",
+      "telephone": "+33766271558",
+      "email": "adec.solutions30@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Anduze",
+        "postalCode": "30140",
+        "addressRegion": "Occitanie",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "44.0539",
+        "longitude": "3.9856"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Anduze"
+        },
+        {
+          "@type": "City",
+          "name": "Alès"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Jean-du-Gard"
+        },
+        {
+          "@type": "State",
+          "name": "Gard"
+        }
+      ],
+      "priceRange": "€€",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Emeline Couret"
+      },
+      "sameAs": [
+        "https://www.facebook.com/AdminECSolutions/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services administratifs",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gestion administrative courante",
+              "description": "Traitement du courrier, classement, archivage, rédaction de documents"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gestion commerciale",
+              "description": "Devis, factures, relances clients, suivi des paiements"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pré-comptabilité",
+              "description": "Saisie d'écritures, rapprochements bancaires, suivi de trésorerie"
+            }
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
     <header id="header">
         <nav>
             <div class="logo-text">ADMIN'EC SOLUTIONS</div>
-            <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+            <button class="burger-menu" id="burgerMenu" aria-label="Menu de navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -79,7 +201,7 @@
             </div>
             <div class="about-image animate-on-scroll">
                 <div class="about-placeholder">
-                    <img src="images/presentation.png" alt="Presentation">
+                    <img src="images/presentation.png" alt="Emeline Couret - Assistante administrative indépendante à Anduze" loading="lazy">
                 </div>
             </div>
         </div>
@@ -92,7 +214,7 @@
             <div class="service-card animate-on-scroll">
                 <div class="service-header">
                     <div class="service-icon">
-                        <img src="images/gestion-administrative.png" alt="Gestion administrative">
+                        <img src="images/gestion-administrative.png" alt="Icône gestion administrative - traitement courrier et classement" loading="lazy">
                     </div>
                     <h3>Gestion administrative courante</h3>
                 </div>
@@ -101,7 +223,7 @@
             <div class="service-card animate-on-scroll">
                 <div class="service-header">
                     <div class="service-icon">
-                        <img src="images/gestion-commerciale.png" alt="Gestion commerciale">
+                        <img src="images/gestion-commerciale.png" alt="Icône gestion commerciale - devis et factures" loading="lazy">
                     </div>
                     <h3>Gestion commerciale</h3>
                 </div>
@@ -110,7 +232,7 @@
             <div class="service-card animate-on-scroll">
                 <div class="service-header">
                     <div class="service-icon">
-                        <img src="images/pre-comptabilite.png" alt="Pré-comptabilité">
+                        <img src="images/pre-comptabilite.png" alt="Icône pré-comptabilité - saisie comptable" loading="lazy">
                     </div>
                     <h3>Pré-comptabilité</h3>
                 </div>
@@ -119,7 +241,7 @@
             <div class="service-card animate-on-scroll">
                 <div class="service-header">
                     <div class="service-icon">
-                        <img src="images/dossiers-specifiques.png" alt="Dossiers spécifiques">
+                        <img src="images/dossiers-specifiques.png" alt="Icône dossiers spécifiques - gestion documentaire" loading="lazy">
                     </div>
                     <h3>Dossiers spécifiques</h3>
                 </div>
@@ -136,7 +258,7 @@
             <div class="specialite-card animate-on-scroll">
                 <div class="specialite-header">
                     <div class="specialite-icon">
-                        <img src="images/artisans-batiment.png" alt="Artisans du bâtiment">
+                        <img src="images/artisans-batiment.png" alt="Icône artisans du bâtiment - gestion chantiers BTP" loading="lazy">
                     </div>
                     <h3>Artisans du bâtiment</h3>
                 </div>
@@ -145,7 +267,7 @@
             <div class="specialite-card animate-on-scroll">
                 <div class="specialite-header">
                     <div class="specialite-icon">
-                        <img src="images/professionnels-sante.png" alt="Professionnels de santé">
+                        <img src="images/professionnels-sante.png" alt="Icône professionnels de santé - secrétariat médical" loading="lazy">
                     </div>
                     <h3>Professionnels de santé</h3>
                 </div>
@@ -154,7 +276,7 @@
             <div class="specialite-card animate-on-scroll">
                 <div class="specialite-header">
                     <div class="specialite-icon">
-                        <img src="images/taxis-vtc.png" alt="Taxis & VTC">
+                        <img src="images/taxis-vtc.png" alt="Icône taxis et VTC - gestion courses" loading="lazy">
                     </div>
                     <h3>Taxis & VTC</h3>
                 </div>
@@ -163,14 +285,14 @@
             <div class="specialite-card animate-on-scroll">
                 <div class="specialite-header">
                     <div class="specialite-icon">
-                        <img src="images/structures-equestres.png" alt="Structures équestres">
+                        <img src="images/structures-equestres.png" alt="Icône structures équestres - gestion centre équestre" loading="lazy">
                     </div>
                     <h3>Structures équestres</h3>
                 </div>
                 <p>Gestion des pensionnaires, tenue des registres, facturation, suivi des adhésions et gestion administrative des centres équestres.</p>
             </div>
         </div>
-        <br></br>
+        <br>
         <p class="section-intro">Bien que spécialisée dans ces 4 secteurs d'activité, je suis ouverte à d'autres activités</p>
     </section>
 
@@ -218,16 +340,16 @@
             
             <div class="contact-methods">
                 <div class="contact-card animate-on-scroll">
-                    <div class="contact-icon"><img src="images/telephone.png" alt="Telephone"></div>
+                    <div class="contact-icon"><img src="images/telephone.png" alt="Icône téléphone - contact téléphonique" loading="lazy"></div>
                     <h3>Par téléphone</h3>
                     <p style="color: #6b7280; margin-bottom: 1rem;">Disponible pour échanger<br>sur vos besoins</p>
-                    <a href="tel:+33766271558" class="contact-link">07 66 27 15 58</a>
+                    <a href="tel:+33766271558" class="contact-link" aria-label="Appeler Admin'EC Solutions au 07 66 27 15 58">07 66 27 15 58</a>
                 </div>
                 <div class="contact-card animate-on-scroll">
-                    <div class="contact-icon"><img src="images/mail.png" alt="Mail"></div>
+                    <div class="contact-icon"><img src="images/mail.png" alt="Icône email - contact par email" loading="lazy"></div>
                     <h3>Par email</h3>
                     <p style="color: #6b7280; margin-bottom: 1rem;">Réponse rapide<br>sous 24h ouvrées</p>
-                    <a href="mailto:adec.solutions30@gmail.com" class="contact-link">adec.solutions30@gmail.com</a>
+                    <a href="mailto:adec.solutions30@gmail.com" class="contact-link" aria-label="Envoyer un email à Admin'EC Solutions">adec.solutions30@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -240,6 +362,7 @@
                 <p><strong>Admin'EC Solutions</strong></p>
                 <p>Assistante Administrative Indépendante</p>
                 <p>Emeline COURET</p>
+                <p>Anduze - Gard (30)</p>
             </div>
             <!-- <div class="footer-info">
                 <p><strong>Informations légales</strong></p>
@@ -248,8 +371,8 @@
             </div> -->
             <div class="footer-social">
                 <p class="footer-social-title"><strong>Suivez-nous</strong></p>
-                <a href="https://www.facebook.com/AdminECSolutions/" target="_blank" class="social-link" aria-label="Facebook">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <a href="https://www.facebook.com/AdminECSolutions/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visiter notre page Facebook">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
                     Facebook
