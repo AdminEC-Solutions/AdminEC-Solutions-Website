@@ -29,7 +29,7 @@
 
 .credits-section {
     margin-bottom: 3rem;
-    background: #f4f5fd;
+    background: #e3e8ff;
     padding: 3rem;
     border-radius: 8px;
     border: 1px solid #e6e8f9;
@@ -72,7 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f4f5fd;
+    background: #e3e8ff;
     border-radius: 8px;
 }
 
