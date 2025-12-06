@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin'EC Solutions - Assistante administrative indépendante à Anduze. Gestion administrative, commerciale et pré-comptabilité pour artisans, professions libérales et entrepreneurs.">
+    <title>Admin'EC Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <div class="logo-text">ADMIN'EC SOLUTIONS</div>
+            <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#specialites">Spécialités</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Overlay pour le menu mobile -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Libérez-vous du poids administratif</h1>
+            <p class="hero-subtitle">Assistante administrative indépendante au service des entrepreneurs,<br>artisans et professionnels libéraux</p>
+            <p class="hero-baseline">"Votre partenaire administrative de confiance"</p>
+            <div class="hero-info">
+                <span>📍 Anduze & Bassin Alésien</span>
+                <span class="separator">•</span>
+                <span>💻 À distance partout en France</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Mes domaines d'expertise</h2>
+        <div class="services-grid">
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon">
+                    <img src="images/gestion-administrative.png" alt="Gestion administrative">
+                </div>
+                <h3>Gestion administrative courante</h3>
+                <p>Traitement du courrier, classement, archivage, rédaction de documents, gestion des emails et suivi des dossiers administratifs.</p>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon">
+                    <img src="images/gestion-commerciale.png" alt="Gestion commerciale">
+                </div>
+                <h3>Gestion commerciale</h3>
+                <p>Devis, factures, relances clients, suivi des paiements, gestion de la relation client et mise à jour de vos fichiers commerciaux.</p>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon">
+                    <img src="images/pre-comptabilite.png" alt="Pré-comptabilité">
+                </div>
+                <h3>Pré-comptabilité</h3>
+                <p>Saisie comptable, rapprochements bancaires, préparation des déclarations TVA, suivi de trésorerie et préparation des bilans.</p>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon">
+                    <img src="images/dossiers-specifiques.png" alt="Dossiers spécifiques">
+                </div>
+                <h3>Dossiers spécifiques</h3>
+                <p>Constitution de dossiers administratifs complexes, demandes de subventions, suivi de projets et gestion documentaire personnalisée.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spécialités Section -->
+    <section id="specialites" class="specialites">
+        <h2>Mes spécialités sectorielles</h2>
+        <p class="section-intro">Une expertise adaptée aux besoins spécifiques de votre métier</p>
+        <div class="specialites-grid">
+            <div class="specialite-card animate-on-scroll">
+                <div class="specialite-icon">
+                    <img src="images/artisans-batiment.png" alt="Artisans du bâtiment">
+                </div>
+                <h3>Artisans du bâtiment</h3>
+                <p>Gestion des chantiers, devis, factures, suivi des sous-traitants et gestion administrative spécifique au secteur du BTP.</p>
+            </div>
+            <div class="specialite-card animate-on-scroll">
+                <div class="specialite-icon">
+                    <img src="images/professionnels-sante.png" alt="Professionnels de santé">
+                </div>
+                <h3>Professionnels de santé</h3>
+                <p>Gestion des plannings, dossiers patients (RGPD), feuilles de soins, télétransmissions et secrétariat médical.</p>
+            </div>
+            <div class="specialite-card animate-on-scroll">
+                <div class="specialite-icon">
+                    <img src="images/taxis-vtc.png" alt="Taxis & VTC">
+                </div>
+                <h3>Taxis & VTC</h3>
+                <p>Facturation courses, gestion des conventions, suivi kilométrique, déclarations administratives et comptabilité spécialisée.</p>
+            </div>
+            <div class="specialite-card animate-on-scroll">
+                <div class="specialite-icon">
+                    <img src="images/structures-equestres.png" alt="Structures équestres">
+                </div>
+                <h3>Structures équestres</h3>
+                <p>Gestion des pensionnaires, planning des cours, facturation, suivi des adhésions et gestion administrative des centres équestres.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formules Section -->
+    <section id="formules" class="formules">
+        <h2>Des solutions adaptées à vos besoins</h2>
+        <div class="formules-container">
+            <div class="formule-card animate-on-scroll">
+                <div class="formule-header">
+                    <h3>Forfaits mensuels</h3>
+                    <p class="formule-badge">Recommandé</p>
+                </div>
+                <p>Un accompagnement régulier avec un nombre d'heures défini pour gérer votre administratif au quotidien.</p>
+                <ul class="formule-avantages">
+                    <li>✓ Tarif préférentiel</li>
+                    <li>✓ Disponibilité garantie</li>
+                    <li>✓ Suivi personnalisé</li>
+                    <li>✓ Engagement mensuel</li>
+                </ul>
+            </div>
+            <div class="formule-card animate-on-scroll">
+                <div class="formule-header">
+                    <h3>Prestations à la carte</h3>
+                    <p class="formule-badge secondary">Flexible</p>
+                </div>
+                <p>Des interventions ponctuelles selon vos besoins spécifiques, sans engagement dans la durée.</p>
+                <ul class="formule-avantages">
+                    <li>✓ Sans engagement</li>
+                    <li>✓ Facturation à l'heure</li>
+                    <li>✓ Réactivité garantie</li>
+                    <li>✓ Idéal pour les pics d'activité</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <h2>Votre partenaire administrative de confiance</h2>
+        <div class="about-content">
+            <div class="about-text animate-on-scroll">
+                <p>
+                    <strong>Admin'EC Solutions</strong> est née d'une volonté d'accompagner les entrepreneurs, artisans et professionnels libéraux dans leur développement en les libérant des tâches administratives chronophages.
+                </p>
+                <p>
+                    Forte d'une formation solide et accompagnée par la BGE, je mets mon expertise au service de votre réussite. Mon objectif : vous permettre de vous concentrer sur votre cœur de métier pendant que je prends en charge votre gestion administrative.
+                </p>
+                <p>
+                    <strong>Mes engagements :</strong>
+                </p>
+                <ul class="about-list">
+                    <li><strong>Proximité</strong> - Intervention en présentiel dans un rayon de 30km autour d'Anduze ou à distance</li>
+                    <li><strong>Confiance</strong> - Confidentialité absolue et professionnalisme garantis</li>
+                    <li><strong>Sur-mesure</strong> - Des solutions adaptées à votre activité et vos besoins</li>
+                    <li><strong>Réactivité</strong> - Une disponibilité et une écoute constantes</li>
+                </ul>
+            </div>
+            <div class="about-image animate-on-scroll">
+                <div class="about-placeholder">
+                    <p>💼</p>
+                    <span>Admin'EC Solutions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Parlons de vos besoins</h2>
+        <div class="contact-container">
+            <p class="contact-intro">
+                Vous êtes débordé par l'administratif ? Vous souhaitez déléguer certaines tâches ?<br>
+                Contactez-moi pour échanger sur vos besoins et trouver la solution adaptée.
+            </p>
+            
+            <div class="contact-methods">
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">📞</div>
+                    <h3>Par téléphone</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Disponible pour échanger<br>sur vos besoins</p>
+                    <a href="tel:+33766271558" class="contact-link">07 66 27 15 58</a>
+                </div>
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Par email</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Réponse rapide<br>sous 24h ouvrées</p>
+                    <a href="mailto:adec.solutions30@gmail.com" class="contact-link">adec.solutions30@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>Admin'EC Solutions</strong></p>
+                <p>Assistante Administrative Indépendante</p>
+                <p>Emeline COURET</p>
+            </div>
+            <div class="footer-info">
+                <p><strong>Informations légales</strong></p>
+                <p>SIRET : [À compléter]</p>
+                <p>RCS : [À compléter]</p>
+            </div>
+            <div class="footer-social">
+                <p class="footer-social-title"><strong>Suivez-nous</strong></p>
+                <a href="https://www.facebook.com/AdminECSolutions/" target="_blank" class="social-link" aria-label="Facebook">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Facebook
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Admin'EC Solutions. Tous droits réservés.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.7;">
+                <a href="html/credits.html" style="color: inherit; text-decoration: underline;">Crédits & Attributions</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
