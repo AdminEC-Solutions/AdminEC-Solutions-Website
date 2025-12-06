@@ -24,7 +24,7 @@ Website for Admin'EC Solutions, administrative services provider.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/matteo-turc/emeline-couret-website.git
+git clone https://github.com/AdminEC-Solutions/AdminEC-Solutions-Website.git
 ```
 
 2. Open `index.html` in your browser
