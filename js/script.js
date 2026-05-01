@@ -1,12 +1,14 @@
-// Header scroll effect
+// Header scroll effect + hauteur dynamique injectée en variable CSS
 const header = document.getElementById('header');
 
+function syncHeaderHeight() {
+    document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+}
+syncHeaderHeight();
+window.addEventListener('resize', syncHeaderHeight);
+
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
+    header.classList.toggle('scrolled', window.scrollY > 50);
 });
 
 // Menu burger toggle
@@ -17,30 +19,37 @@ const menuOverlay = document.getElementById('menuOverlay');
 function toggleMenu() {
     burgerMenu.classList.toggle('active');
     navLinks.classList.toggle('active');
-    menuOverlay.classList.toggle('active');
-    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
 }
 
-burgerMenu.addEventListener('click', toggleMenu);
-menuOverlay.addEventListener('click', toggleMenu);
+function closeMenu() {
+    burgerMenu.classList.remove('active');
+    navLinks.classList.remove('active');
+}
+
+burgerMenu.addEventListener('click', (e) => { e.stopPropagation(); toggleMenu(); });
+document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('active') && !navLinks.contains(e.target)) {
+        closeMenu();
+    }
+});
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        // Fermer le menu mobile si ouvert
         if (navLinks.classList.contains('active')) {
-            toggleMenu();
+            // Mobile : fermer le menu d'abord, scroller ensuite
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            closeMenu();
+            setTimeout(() => {
+                const target = document.querySelector(href);
+                if (target) {
+                    const top = target.getBoundingClientRect().top + window.scrollY - header.offsetHeight;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            }, 350);
         }
-        
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        // Desktop : scroll natif du navigateur + scroll-margin-top CSS
     });
 });
 
@@ -123,7 +132,3 @@ window.addEventListener('scroll', () => {
         hero.style.opacity = 1 - (scrolled / 500);
     }
 });
-
-// Easter egg: Log message for developers
-console.log('%c🚀 Site développé avec passion', 'color: #1a1a1a; font-size: 16px; font-weight: bold;');
-console.log('%cBesoin d\'un site web ? Contactez-nous !', 'color: #6b7280; font-size: 14px;');

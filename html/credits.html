@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title>Crédits - Admin'EC Solutions</title>
 
     <!-- Favicon -->
@@ -12,16 +13,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/credits.css">
 </head>
 <body>
     <!-- Header -->
     <header id="header">
-        <nav>
-            <div class="logo-text">ADMIN'EC SOLUTIONS</div>
-        </nav>
+        <div class="nav-inner">
+            <a href="../index.html" class="logo-link">
+                <span class="nav-brand">Admin'EC Solutions</span>
+            </a>
+        </div>
     </header>
 
     <div class="credits-container">
@@ -97,6 +100,12 @@
         </div>
     </div>
 
-    <script src="../js/script.js"></script>
+    <script>
+        // Header scroll effect only
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
 </body>
 </html>
